@@ -7,11 +7,14 @@
         "contenido"
         "rodapie";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh 10vh;
+    grid-template-rows: 50px auto auto;
 }
 
 .encabezado {
     grid-area: encabezado;
+    align-items: center;
+    display: flex;
+    padding: 0px 2rem;
 }
 
 .contenido {
@@ -20,4 +23,23 @@
 
 .rodapie {
     grid-area: rodapie;
+    display: flex;
+    justify-content: center;
+    background: #fdfdfd;
+    padding: 1rem;
+    color: #333333;
+}
+
+.menu__link{
+    color: #1c6cc7;
+    padding: .5rem 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__link:hover, .menu__link:active{
+    border-bottom: 2px solid #1c6cc7;
+}
+
+.activo{
+    border-bottom: 2px solid #1c6cc7b2;
 }
